@@ -1,4 +1,4 @@
-// components/TopBar.tsx
+
 "use client";
 
 import { Phone, Mail, Smartphone } from "lucide-react";
