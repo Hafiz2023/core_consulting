@@ -1,0 +1,261 @@
+[
+  {
+    "id": "1",
+    "name": "Mobinil (now Orange Egypt)",
+    "logoSrc": "/Cleint pics/pics1.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "2",
+    "name": "National Commercial Bank / AlAhli Bank",
+    "logoSrc": "/Cleint pics/pics2.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "3",
+    "name": "NCB Capital",
+    "logoSrc": "/Cleint pics/pics3.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "4",
+    "name": "Sample Client A",
+    "logoSrc": "/Cleint pics/pics4.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "5",
+    "name": "Sample Client B",
+    "logoSrc": "/Cleint pics/pics5.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "6",
+    "name": "Mobinil (now Orange Egypt) (Copy 1)",
+    "logoSrc": "/Cleint pics/pics6.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "7",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 1)",
+    "logoSrc": "/Cleint pics/pics7.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "8",
+    "name": "NCB Capital (Copy 1)",
+    "logoSrc": "/Cleint pics/pics8.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "9",
+    "name": "Sample Client A (Copy 1)",
+    "logoSrc": "/Cleint pics/pics9.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "10",
+    "name": "Sample Client B (Copy 1)",
+    "logoSrc": "/Cleint pics/pics10.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "11",
+    "name": "Mobinil (now Orange Egypt) (Copy 2)",
+    "logoSrc": "/Cleint pics/pics11.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "12",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 2)",
+    "logoSrc": "/Cleint pics/pics12.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "13",
+    "name": "NCB Capital (Copy 2)",
+    "logoSrc": "/Cleint pics/pics13.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "14",
+    "name": "Sample Client A (Copy 2)",
+    "logoSrc": "/Cleint pics/pics14.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "15",
+    "name": "Sample Client B (Copy 2)",
+    "logoSrc": "/Cleint pics/pics15.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "16",
+    "name": "Mobinil (now Orange Egypt) (Copy 3)",
+    "logoSrc": "/Cleint pics/pics16.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "17",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 3)",
+    "logoSrc": "/Cleint pics/pics17.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "18",
+    "name": "NCB Capital (Copy 3)",
+    "logoSrc": "/Cleint pics/pics18.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "19",
+    "name": "Sample Client A (Copy 3)",
+    "logoSrc": "/Cleint pics/pics19.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "20",
+    "name": "Sample Client B (Copy 3)",
+    "logoSrc": "/Cleint pics/pics20.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "21",
+    "name": "Mobinil (now Orange Egypt) (Copy 4)",
+    "logoSrc": "/Cleint pics/pics21.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "22",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 4)",
+    "logoSrc": "/Cleint pics/pics22.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "23",
+    "name": "NCB Capital (Copy 4)",
+    "logoSrc": "/Cleint pics/pics23.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "24",
+    "name": "Sample Client A (Copy 4)",
+    "logoSrc": "/Cleint pics/pics24.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "25",
+    "name": "Sample Client B (Copy 4)",
+    "logoSrc": "/Cleint pics/pics25.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "26",
+    "name": "Mobinil (now Orange Egypt) (Copy 5)",
+    "logoSrc": "/Cleint pics/pics26.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "27",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 5)",
+    "logoSrc": "/Cleint pics/pics27.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "28",
+    "name": "NCB Capital (Copy 5)",
+    "logoSrc": "/Cleint pics/pics28.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "29",
+    "name": "Sample Client A (Copy 5)",
+    "logoSrc": "/Cleint pics/pics29.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "30",
+    "name": "Sample Client B (Copy 5)",
+    "logoSrc": "/Cleint pics/pics30.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "31",
+    "name": "Mobinil (now Orange Egypt) (Copy 6)",
+    "logoSrc": "/Cleint pics/pics31.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "32",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 6)",
+    "logoSrc": "/Cleint pics/pics32.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  },
+  {
+    "id": "33",
+    "name": "NCB Capital (Copy 6)",
+    "logoSrc": "/Cleint pics/pics33.jpg",
+    "altText": "NCB Capital Logo",
+    "description": "NCB Capital, the investment banking arm of NCB, is a key player in the Saudi capital markets. Our services helped them optimize their business continuity and information security protocols."
+  },
+  {
+    "id": "34",
+    "name": "Sample Client A (Copy 6)",
+    "logoSrc": "/Cleint pics/pics34.jpg",
+    "altText": "Sample Client A Logo",
+    "description": "We collaborated with Sample Client A, a multinational corporation in the technology sector, to implement robust disaster recovery solutions."
+  },
+  {
+    "id": "35",
+    "name": "Sample Client B (Copy 6)",
+    "logoSrc": "/Cleint pics/pics35.jpg",
+    "altText": "Sample Client B Logo",
+    "description": "Providing specialized risk assessment and mitigation strategies for Sample Client B, a leader in the renewable energy industry."
+  },
+  {
+    "id": "36",
+    "name": "Mobinil (now Orange Egypt) (Copy 7)",
+    "logoSrc": "/Cleint pics/pics36.jpg",
+    "altText": "Mobinil Logo",
+    "description": "Mobinil, now known as Orange Egypt, is a leading mobile network operator in Egypt. We provided various services to support their operational resilience."
+  },
+  {
+    "id": "37",
+    "name": "National Commercial Bank / AlAhli Bank (Copy 7)",
+    "logoSrc": "/Cleint pics/pics37.jpg",
+    "altText": "NCB AlAhli Logo",
+    "description": "National Commercial Bank (NCB), now Saudi National Bank (SNB) after merging with Samba Financial Group, is a prominent financial institution in Saudi Arabia. We assisted them in enhancing their continuity and risk management frameworks."
+  }
+]
