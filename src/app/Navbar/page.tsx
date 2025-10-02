@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import TopBar from "../TopBar/page";
 
-
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -19,8 +18,11 @@ export default function Navbar() {
       dropdown: [
         { label: "Our Team", link: "/AboutUs/OurTeam" },
         { label: "Client", link: "/AboutUs/ClientsPage" },
-           { label: "Consulting", link: "/AboutUs/Consulting" },
-           { label: "Notification And Crisis Communication", link: "/AboutUs/NotificationAndCrisisCommunication" },
+        { label: "Consulting", link: "/AboutUs/Consulting" },
+        {
+          label: "Notification And Crisis Communication",
+          link: "/AboutUs/NotificationAndCrisisCommunication",
+        },
       ],
     },
     {
@@ -94,14 +96,12 @@ export default function Navbar() {
     {
       name: "Contact",
       href: "/Contact",
-        dropdown: [
+      dropdown: [
         {
           label: "Register Now",
           link: "/Contact/Register",
         },
-       
       ],
-      
     },
   ];
 
@@ -111,15 +111,17 @@ export default function Navbar() {
 
       <nav className="sticky top-10 left-0 w-full z-40 bg-white shadow-sm">
         <div className="container mx-auto flex justify-between items-center px-4 py-3 md:py-4">
-          {/* ✅ Logo */}
+          {/* ✅ Logo with Link */}
           <div className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="flex-shrink-0"
-            />
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={120} // ✅ size adjust
+                height={60} // ✅ size adjust
+                className="flex-shrink-0 object-contain"
+              />
+            </Link>
           </div>
 
           {/* ✅ Desktop Nav */}
