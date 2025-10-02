@@ -1,15 +1,7 @@
-
 "use client";
 
 import React from "react";
-import {
-
-  Target,
-  Users,
-  ClipboardCheck,
-  TrendingUp,
-
-} from "lucide-react";
+import { Target, Users, ClipboardCheck, TrendingUp } from "lucide-react";
 
 export default function ProjectManagement() {
   return (
@@ -23,8 +15,8 @@ export default function ProjectManagement() {
         {/* Intro */}
         <p className="text-gray-700 text-lg leading-relaxed mb-10 text-justify">
           Project Management is the practice of planning, executing, and closing
-          projects to achieve specific objectives within defined scope, time, and
-          budget constraints. It provides organizations with a structured
+          projects to achieve specific objectives within defined scope, time,
+          and budget constraints. It provides organizations with a structured
           approach to manage initiatives effectively, ensuring delivery of value
           and alignment with business goals.
         </p>
@@ -50,12 +42,24 @@ export default function ProjectManagement() {
             Core Areas of Project Management
           </h2>
           <ul className="list-disc pl-6 mt-4 text-gray-700 space-y-2">
-            <li>Project Planning – defining scope, objectives, and timelines</li>
-            <li>Resource Management – allocating human, financial, and material resources</li>
+            <li>
+              Project Planning – defining scope, objectives, and timelines
+            </li>
+            <li>
+              Resource Management – allocating human, financial, and material
+              resources
+            </li>
             <li>Risk Management – identifying and mitigating project risks</li>
-            <li>Quality Management – ensuring project deliverables meet standards</li>
-            <li>Communication Management – facilitating effective stakeholder communication</li>
-            <li>Performance Monitoring – tracking progress with KPIs and metrics</li>
+            <li>
+              Quality Management – ensuring project deliverables meet standards
+            </li>
+            <li>
+              Communication Management – facilitating effective stakeholder
+              communication
+            </li>
+            <li>
+              Performance Monitoring – tracking progress with KPIs and metrics
+            </li>
           </ul>
         </div>
 
@@ -104,4 +108,3 @@ export default function ProjectManagement() {
     </div>
   );
 }
-

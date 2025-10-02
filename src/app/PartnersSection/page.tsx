@@ -2,7 +2,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
 import React from "react"; 
 
 export default function PartnersSection() {
@@ -26,13 +26,13 @@ export default function PartnersSection() {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" }, 
+      transition: { duration: 0.6, ease: easeOut }, 
     },
   };
 
 
   const logoHoverEffect = {
-    whileHover: { scale: 1.15, transition: { duration: 0.3, ease: "easeOut" } }, // Increased duration for smoother hover
+    whileHover: { scale: 1.15, transition: { duration: 0.3, ease: easeOut } }, // Increased duration for smoother hover
     whileTap: { scale: 0.95 },
   };
 

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -66,12 +65,8 @@ export default function InformationSecurity() {
             <li>
               Financial data, management assessments, and financial records
             </li>
-            <li>
-              Customer and confidential information
-            </li>
-            <li>
-              Protecting data ensures compliance and resilience
-            </li>
+            <li>Customer and confidential information</li>
+            <li>Protecting data ensures compliance and resilience</li>
           </ul>
         </div>
 
@@ -84,7 +79,9 @@ export default function InformationSecurity() {
             Security is built-in and not bolt-on
           </p>
 
-          <h3 className="text-xl font-semibold mb-3">What CORE can help you with</h3>
+          <h3 className="text-xl font-semibold mb-3">
+            What CORE can help you with
+          </h3>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h4 className="font-semibold text-gray-800 flex items-center gap-2 mb-2">
@@ -159,4 +156,3 @@ export default function InformationSecurity() {
     </div>
   );
 }
-

@@ -1,11 +1,10 @@
-
 "use client";
 
 import { Phone, Mail, Smartphone } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export function TopBar() {
+export default function TopBar() {
   const itemVariants = {
     hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },

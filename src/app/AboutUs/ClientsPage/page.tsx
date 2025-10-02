@@ -4,7 +4,6 @@ import React, { useState, useEffect, Fragment } from "react";
 import Image from "next/image";
 import { Dialog, Transition } from "@headlessui/react";
 
-// Define the interface for a client object
 interface Client {
   id: string;
   name: string;

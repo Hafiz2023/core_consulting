@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-// 🚀 Services data
 const services = [
   {
     title: "Consulting - Implementation",
@@ -78,8 +77,6 @@ const containerVariants = {
   },
 };
 
-
-
 export default function ServicesGrid() {
   return (
     <section className="py-16 bg-gray-50">
@@ -91,10 +88,7 @@ export default function ServicesGrid() {
         variants={containerVariants}
       >
         {/* 🔹 Heading */}
-        <motion.h2
-          className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12 underline decoration-blue-600 underline-offset-8"
-         
-        >
+        <motion.h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12 underline decoration-blue-600 underline-offset-8">
           Our <span className="text-blue-600">Expert Services</span>
         </motion.h2>
 
@@ -114,7 +108,6 @@ export default function ServicesGrid() {
                 } 
                 shadow-sm transition-all duration-300 
                 hover:bg-blue-50 hover:border-blue-500 hover:shadow-xl`}
-            
               whileHover={{ scale: 1.05 }}
             >
               {/* Card Heading */}

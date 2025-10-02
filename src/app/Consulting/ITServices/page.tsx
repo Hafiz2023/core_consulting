@@ -1,15 +1,7 @@
-
 "use client";
 
 import React from "react";
-import {
-  Server,
-
-  Users,
-  ClipboardList,
-
-  LifeBuoy,
-} from "lucide-react";
+import { Server, Users, ClipboardList, LifeBuoy } from "lucide-react";
 
 export default function ITServices() {
   return (
@@ -36,10 +28,11 @@ export default function ITServices() {
             Why IT Service Management
           </h2>
           <p className="text-gray-700 leading-relaxed text-justify">
-            ITSM enables organizations to streamline IT operations, reduce costs,
-            and enhance customer experience. By following best practices such as
-            ITIL, ITSM ensures predictable, reliable, and high-quality IT service
-            delivery while supporting digital transformation and innovation.
+            ITSM enables organizations to streamline IT operations, reduce
+            costs, and enhance customer experience. By following best practices
+            such as ITIL, ITSM ensures predictable, reliable, and high-quality
+            IT service delivery while supporting digital transformation and
+            innovation.
           </p>
         </div>
 
@@ -50,12 +43,20 @@ export default function ITServices() {
             Core ITSM Practices
           </h2>
           <ul className="list-disc pl-6 mt-4 text-gray-700 space-y-2">
-            <li>Incident Management – restoring services quickly after issues</li>
-            <li>Problem Management – identifying root causes to prevent recurrence</li>
+            <li>
+              Incident Management – restoring services quickly after issues
+            </li>
+            <li>
+              Problem Management – identifying root causes to prevent recurrence
+            </li>
             <li>Change Management – ensuring controlled IT changes</li>
             <li>Service Desk – single point of contact for users</li>
-            <li>Configuration & Asset Management – managing IT assets effectively</li>
-            <li>Continual Service Improvement – refining services for better value</li>
+            <li>
+              Configuration & Asset Management – managing IT assets effectively
+            </li>
+            <li>
+              Continual Service Improvement – refining services for better value
+            </li>
           </ul>
         </div>
 
@@ -96,12 +97,11 @@ export default function ITServices() {
 
         {/* Closing */}
         <p className="text-gray-700 text-lg leading-relaxed text-center mt-10">
-          IT Service Management is the backbone of modern IT operations, ensuring
-          organizations deliver high-quality, reliable, and value-driven services
-          to meet evolving business and customer needs.
+          IT Service Management is the backbone of modern IT operations,
+          ensuring organizations deliver high-quality, reliable, and
+          value-driven services to meet evolving business and customer needs.
         </p>
       </div>
     </div>
   );
 }
-

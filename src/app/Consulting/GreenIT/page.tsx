@@ -1,15 +1,7 @@
-
 "use client";
 
 import React from "react";
-import {
-  Leaf,
-  Battery,
-  Recycle,
-
-  Lightbulb,
-
-} from "lucide-react";
+import { Leaf, Battery, Recycle, Lightbulb } from "lucide-react";
 
 export default function GreenIT() {
   return (
@@ -23,11 +15,11 @@ export default function GreenIT() {
         {/* Intro */}
         <p className="text-gray-700 text-lg leading-relaxed mb-10 text-justify">
           Green IT & Energy Management focuses on sustainable use of technology
-          and energy resources. It promotes environmentally responsible practices
-          in IT operations, infrastructure, and energy consumption. The goal is
-          to reduce carbon footprint, improve energy efficiency, and align IT
-          strategies with global sustainability initiatives while maintaining
-          business performance and innovation.
+          and energy resources. It promotes environmentally responsible
+          practices in IT operations, infrastructure, and energy consumption.
+          The goal is to reduce carbon footprint, improve energy efficiency, and
+          align IT strategies with global sustainability initiatives while
+          maintaining business performance and innovation.
         </p>
 
         {/* Why Section */}
@@ -41,7 +33,8 @@ export default function GreenIT() {
             environmental impact. Green IT helps optimize data centers, minimize
             electronic waste, and implement renewable energy strategies.
             Effective energy management not only reduces costs but also meets
-            regulatory requirements and enhances corporate social responsibility.
+            regulatory requirements and enhances corporate social
+            responsibility.
           </p>
         </div>
 
@@ -98,12 +91,11 @@ export default function GreenIT() {
 
         {/* Closing */}
         <p className="text-gray-700 text-lg leading-relaxed text-center mt-10">
-          Green IT & Energy Management is not just about saving energy—it’s about
-          building a sustainable future where technology and environment work
-          together in harmony.
+          Green IT & Energy Management is not just about saving energy—it’s
+          about building a sustainable future where technology and environment
+          work together in harmony.
         </p>
       </div>
     </div>
   );
 }
-

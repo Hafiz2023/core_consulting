@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 
 import React, { useCallback, useEffect, useState } from "react";
@@ -84,7 +83,6 @@ export default function TestimonialsSection() {
               className="embla__slide flex-none w-full md:w-1/2 lg:w-1/3 pl-4"
             >
               <div className="bg-white p-6 rounded-md shadow-sm border border-gray-100 h-full flex flex-col justify-between text-left">
-           
                 <p className="text-gray-700 text-base mb-4">
                   {testimonial.quote}
                 </p>

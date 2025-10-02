@@ -1,4 +1,3 @@
-// app/leadership-consulting/page.tsx
 "use client";
 
 import { useState } from "react";
@@ -12,7 +11,6 @@ export default function LeadershipConsulting() {
     <span className="text-blue-700 font-semibold">{text}</span>
   );
 
-  // 🔹 Sections with optional images
   const sections = [
     {
       id: 1,

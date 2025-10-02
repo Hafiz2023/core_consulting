@@ -1,15 +1,7 @@
-
 "use client";
 
 import React from "react";
-import {
-  BookOpen,
-  Users,
-  GraduationCap,
-  Target,
-  Award,
-
-} from "lucide-react";
+import { BookOpen, Users, GraduationCap, Target, Award } from "lucide-react";
 
 export default function RiskManagementTrainings() {
   return (
@@ -52,8 +44,13 @@ export default function RiskManagementTrainings() {
           <ul className="list-disc pl-6 mt-4 text-gray-700 space-y-2">
             <li>Technical Training – enhancing domain-specific skills</li>
             <li>Leadership & Management Training – building future leaders</li>
-            <li>Soft Skills Training – communication, teamwork, and critical thinking</li>
-            <li>Compliance & Safety Training – ensuring regulatory alignment</li>
+            <li>
+              Soft Skills Training – communication, teamwork, and critical
+              thinking
+            </li>
+            <li>
+              Compliance & Safety Training – ensuring regulatory alignment
+            </li>
             <li>Onboarding Training – integrating new employees effectively</li>
             <li>Continuous Professional Development (CPD)</li>
           </ul>
@@ -101,4 +98,3 @@ export default function RiskManagementTrainings() {
     </div>
   );
 }
-

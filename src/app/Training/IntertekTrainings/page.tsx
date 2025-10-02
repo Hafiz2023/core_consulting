@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Link from "next/link"; // Import Link for better navigation
-
+import Link from "next/link";
 const IntertekTrainings = () => {
   return (
     <div className="container mx-auto px-4 py-8 md:px-8 lg:px-16 max-w-4xl">
@@ -9,7 +8,6 @@ const IntertekTrainings = () => {
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
         Intertek Trainings{" "}
       </h1>
- 
       {/* Introduction */}
       <section className="mb-8">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-indigo-700">

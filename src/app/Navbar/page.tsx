@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { TopBar } from "@/app/TopBar/page";
+import TopBar from "../TopBar/page";
+
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
