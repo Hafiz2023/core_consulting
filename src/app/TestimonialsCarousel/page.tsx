@@ -7,30 +7,64 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Were valuable and the trainer's practical experience was evident.",
-    author: "Mobinil",
-    designation: "IT Firm Owner",
+    quote:
+      "The leadership sessions helped us redefine goals and align the team with purpose. A game changer for us!",
+    author: "Sarah Mitchell",
+    designation: "Head of Operations, BrightWave Technologies",
   },
   {
     quote:
-      "Conceptually clear, highly experienced, and very effective as consultants.",
-    author: "TCF (The Centennial Fund)",
-    designation: "IT Firm Owner, Dubai.",
+      "Their consulting approach is a mix of innovation and clarity. Every workshop was practical and insightful.",
+    author: "Ahmed Khan",
+    designation: "Founder, Apex Digital Solutions",
   },
   {
-    quote: "Very effective.",
-    author: "IT Firm Owner, Dubai.",
-    designation: "",
+    quote:
+      "The interactive sessions created real impact — our managers now lead with confidence and strategy.",
+    author: "Linda Park",
+    designation: "HR Director, InnovateX",
   },
   {
-    quote: "Excellent insights and practical advice, highly recommend!",
-    author: "Global Tech Solutions",
-    designation: "CEO",
+    quote:
+      "Brilliant insights and engaging style! The team came back energized and motivated.",
+    author: "David Roberts",
+    designation: "CEO, NextVision Global",
   },
   {
-    quote: "The training transformed our team's capabilities.",
-    author: "Innovative Corp",
-    designation: "HR Manager",
+    quote:
+      "They bring real-world expertise. Our productivity and communication have improved drastically.",
+    author: "Maria Gonzalez",
+    designation: "Project Manager, TechSphere",
+  },
+  {
+    quote:
+      "I’ve attended many trainings, but this one stood out — deeply practical and results-oriented.",
+    author: "James Walker",
+    designation: "Operations Lead, Skyline Industries",
+  },
+  {
+    quote:
+      "Professional, powerful, and inspiring. We’ve already scheduled our next leadership retreat with them.",
+    author: "Aisha Noor",
+    designation: "Learning & Development Head, Horizon Group",
+  },
+  {
+    quote:
+      "The session delivered both strategy and empathy — perfect for teams navigating transformation.",
+    author: "Ravi Patel",
+    designation: "Training Coordinator, BlueOrbit Solutions",
+  },
+  {
+    quote:
+      "Every lesson was applicable from day one. The trainer’s depth of knowledge is impressive.",
+    author: "Emily Carter",
+    designation: "Corporate Trainer, DeltaEdge Systems",
+  },
+  {
+    quote:
+      "Highly engaging! Our participants walked away with clarity, tools, and confidence to lead.",
+    author: "Michael Brown",
+    designation: "Managing Partner, GrowthEdge Consulting",
   },
 ];
 
@@ -38,54 +72,66 @@ export default function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
-      align: "center",
+      align: "start",
       skipSnaps: false,
-      duration: 40, // 🔹 smoother sliding
+      dragFree: true,
+      containScroll: "trimSnaps",
+      duration: 600,
     },
-    [Autoplay({ delay: 3500, stopOnInteraction: false })] // 🔹 Auto loop without stopping
+    [
+      Autoplay({
+        delay: 18000,
+        playOnInit: true,
+        stopOnInteraction: false,
+        stopOnMouseEnter: false,
+      }),
+    ]
   );
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
   const scrollTo = useCallback(
-    (index: number) => {
-      if (emblaApi) emblaApi.scrollTo(index);
-    },
+    (index: number) => emblaApi && emblaApi.scrollTo(index),
     [emblaApi]
   );
 
-  const onSelect = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-
   useEffect(() => {
     if (!emblaApi) return;
-    onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
 
-    emblaApi.on("select", onSelect);
-    emblaApi.on("reInit", onSelect);
+    const handleSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    setScrollSnaps(emblaApi.scrollSnapList());
+    handleSelect();
+
+    emblaApi.on("select", handleSelect);
+    emblaApi.on("reInit", handleSelect);
+
+    const interval = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 2500);
 
     return () => {
-      emblaApi.off("select", onSelect);
-      emblaApi.off("reInit", onSelect);
+      clearInterval(interval);
+      emblaApi.off("select", handleSelect);
+      emblaApi.off("reInit", handleSelect);
     };
-  }, [emblaApi, setScrollSnaps, onSelect]);
+  }, [emblaApi]);
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 px-6">
+    <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 py-16 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="text-4xl font-bold text-gray-800 mb-2"
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="text-4xl font-extrabold bg-gradient-to-r from-indigo-600 via-blue-500 to-teal-400 bg-clip-text text-transparent mb-2"
         >
-          What People Say About Us
+          What Our Clients Say
         </motion.h1>
-        <div className="w-28 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto mb-10 rounded-full"></div>
+        <div className="w-28 h-1 bg-gradient-to-r from-indigo-500 to-teal-400 mx-auto mb-10 rounded-full"></div>
       </div>
 
       {/* Embla Carousel */}
@@ -94,21 +140,21 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0.4, scale: 0.95 }}
+              initial={{ opacity: 0.6, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="embla__slide flex-none w-full md:w-1/2 lg:w-1/3 pl-4"
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="embla__slide flex-none w-3/4 sm:w-1/2 lg:w-1/3 pl-4"
             >
-              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 h-full flex flex-col justify-between hover:shadow-2xl transition-all duration-500">
-                <p className="text-gray-700 text-lg leading-relaxed italic mb-4">
+              <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 h-full flex flex-col justify-between hover:shadow-xl transition-all duration-500">
+                <p className="text-gray-700 text-lg leading-relaxed italic mb-4 border-l-4 border-blue-400 pl-4">
                   {testimonial.quote}
                 </p>
                 <div>
-                  <p className="font-semibold text-gray-900 text-base">
+                  <p className="font-semibold text-indigo-700 text-base">
                     {testimonial.author}
                   </p>
                   {testimonial.designation && (
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 mt-1">
                       {testimonial.designation}
                     </p>
                   )}
@@ -124,14 +170,14 @@ export default function TestimonialsSection() {
         {scrollSnaps.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === selectedIndex
-                ? "bg-gradient-to-r from-blue-500 to-teal-500 scale-125"
-                : "bg-gray-300 hover:bg-gray-400"
-            }`}
             onClick={() => scrollTo(index)}
             aria-label={`Go to slide ${index + 1}`}
-          ></button>
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              selectedIndex === index
+                ? "bg-gradient-to-r from-indigo-500 to-teal-400 scale-125"
+                : "bg-gray-300 hover:bg-gray-400"
+            }`}
+          />
         ))}
       </div>
     </div>
