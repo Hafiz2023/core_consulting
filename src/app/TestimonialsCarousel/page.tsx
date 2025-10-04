@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { motion } from "framer-motion";
@@ -8,71 +8,64 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote:
-      "The leadership sessions helped us redefine goals and align the team with purpose. A game changer for us!",
+    quote: "The leadership sessions helped us redefine goals and align the team with purpose. A game changer for us!",
     author: "Sarah Mitchell",
     designation: "Head of Operations, BrightWave Technologies",
   },
   {
-    quote:
-      "Their consulting approach is a mix of innovation and clarity. Every workshop was practical and insightful.",
+    quote: "Their consulting approach is a mix of innovation and clarity. Every workshop was practical and insightful.",
     author: "Ahmed Khan",
     designation: "Founder, Apex Digital Solutions",
   },
   {
-    quote:
-      "The interactive sessions created real impact — our managers now lead with confidence and strategy.",
+    quote: "The interactive sessions created real impact — our managers now lead with confidence and strategy.",
     author: "Linda Park",
     designation: "HR Director, InnovateX",
   },
   {
-    quote:
-      "Professional, powerful, and inspiring. We’ve already scheduled our next leadership retreat with them.",
+    quote: "Professional, powerful, and inspiring. We’ve already scheduled our next leadership retreat with them.",
     author: "Aisha Noor",
     designation: "Learning & Development Head, Horizon Group",
   },
   {
-    quote:
-      "Every lesson was applicable from day one. The trainer’s depth of knowledge is impressive.",
+    quote: "Every lesson was applicable from day one. The trainer’s depth of knowledge is impressive.",
     author: "Emily Carter",
     designation: "Corporate Trainer, DeltaEdge Systems",
   },
   {
-    quote:
-      "Highly engaging! Our participants walked away with clarity, tools, and confidence to lead.",
+    quote: "Highly engaging! Our participants walked away with clarity, tools, and confidence to lead.",
     author: "Michael Brown",
     designation: "Managing Partner, GrowthEdge Consulting",
   },
 ];
 
 export default function TestimonialsSection() {
-  const autoplay = Autoplay({
-    delay: 4000,
-    playOnInit: true,
-    stopOnInteraction: false,
-    stopOnMouseEnter: true,
-  });
+  const autoplay = useRef(
+    Autoplay({
+      delay: 4000,
+      playOnInit: true,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    })
+  );
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
-      loop: true,           // 🔁 Continuous looping
-      align: "start",       // ✅ Prevent gap
+      loop: true,
+      align: "start",
       skipSnaps: false,
       dragFree: false,
       duration: 800,
     },
-    [autoplay]
+    [autoplay.current]
   );
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
-  const scrollTo = useCallback(
-    (index: number) => emblaApi && emblaApi.scrollTo(index),
-    [emblaApi]
-  );
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+  const scrollTo = useCallback((index: number) => emblaApi?.scrollTo(index), [emblaApi]);
+  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -84,19 +77,18 @@ export default function TestimonialsSection() {
     emblaApi.on("select", handleSelect);
     emblaApi.on("reInit", handleSelect);
 
-    // 🧠 Handle autoplay pause/resume on user drag
-    emblaApi.on("pointerDown", () => autoplay.stop());
-    emblaApi.on("pointerUp", () => autoplay.play());
+    // 🧠 Pause/resume autoplay
+    emblaApi.on("pointerDown", () => autoplay.current.stop());
+    emblaApi.on("pointerUp", () => autoplay.current.play());
 
     return () => {
       emblaApi.off("select", handleSelect);
       emblaApi.off("reInit", handleSelect);
     };
-  }, [emblaApi, autoplay]);
+  }, [emblaApi]);
 
   return (
     <section className="relative bg-gradient-to-br from-indigo-50 via-white to-blue-50 py-20 px-6 overflow-hidden">
-      {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +101,6 @@ export default function TestimonialsSection() {
         <div className="w-32 h-1 bg-gradient-to-r from-indigo-500 to-teal-400 mx-auto rounded-full"></div>
       </motion.div>
 
-      {/* Carousel */}
       <div className="max-w-7xl mx-auto relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex -ml-4">
