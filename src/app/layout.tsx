@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Continuity & Resilience",
+  title: "Core Consulting",
   description:
     "Official website for Continuity & Resilience - Empowering your future!",
 };
