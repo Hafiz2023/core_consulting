@@ -115,10 +115,10 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.png"
+                src="/Core logo.png"
                 alt="Logo"
-                width={120} // ✅ size adjust
-                height={60} // ✅ size adjust
+                width={150} // ✅ size adjust
+                height={100} // ✅ size adjust
                 className="flex-shrink-0 object-contain"
               />
             </Link>
