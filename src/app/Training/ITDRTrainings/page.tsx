@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+// ✅ Interface for Trainer data structure
 interface Trainer {
   id: string;
   name: string;
@@ -10,6 +11,7 @@ interface Trainer {
   description: string;
 }
 
+// ✅ Mock Data for ITDR Trainers
 const trainers: Trainer[] = [
   {
     id: "1",
@@ -42,6 +44,7 @@ const trainers: Trainer[] = [
 ];
 
 export default function ITDRTrainings() {
+  // ✅ State to manage the currently selected trainer for display
   const [selectedTrainer, setSelectedTrainer] = useState<Trainer>(trainers[0]);
 
   return (
@@ -55,7 +58,7 @@ export default function ITDRTrainings() {
       >
         IT DR <span className="text-blue-600">Trainings</span>
       </motion.h1>
-      ```
+
       <div className="flex flex-col md:flex-row gap-10">
         {/* 🔹 Sidebar */}
         <nav className="w-full md:w-1/4 bg-white shadow-xl rounded-2xl p-6 border border-gray-200">
@@ -68,11 +71,10 @@ export default function ITDRTrainings() {
               >
                 <button
                   onClick={() => setSelectedTrainer(trainer)}
-                  className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    selectedTrainer?.id === trainer.id
-                      ? "bg-blue-600 text-white shadow-lg"
-                      : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
-                  }`}
+                  className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-all duration-300 ${selectedTrainer?.id === trainer.id
+                    ? "bg-blue-600 text-white shadow-lg"
+                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                    }`}
                 >
                   {trainer.name}
                 </button>

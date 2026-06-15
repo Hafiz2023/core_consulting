@@ -121,10 +121,12 @@ const AboutUs: React.FC = () => {
       content: (
         <p>
           Explore the organizations we’ve partnered with in our{" "}
-          <Link href="/clients" className="text-indigo-600 hover:underline">
+          {/* ✅ Link to Clients Page */}
+          <Link href="/AboutUs/ClientsPage" className="text-indigo-600 hover:underline">
             clients
           </Link>{" "}
           section. View our{" "}
+          {/* ✅ Links to Partners and Testimonials Pages */}
           <Link href="/partners" className="text-indigo-600 hover:underline">
             partners
           </Link>{" "}
